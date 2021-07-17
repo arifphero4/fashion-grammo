@@ -1,6 +1,6 @@
 /* common style */
 body {
-  background-color: #f3f1ff;
+  background-color: #3414ee;
 }
 
 .header {
@@ -25,6 +25,27 @@ nav {
 }
 .nav-links li a {
   text-decoration: none;
-  color: orange;
+  color: #ffffff;
   padding: 5px 0;
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  background: #ffffff;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.nav-links li a:hover:after {
+  width: 100%;
+}
+.button {
+  background: #ff3d00;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
 }
